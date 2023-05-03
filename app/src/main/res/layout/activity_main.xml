@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="152dp"
+        android:layout_height="182dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="7dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/text_view_picture_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:background="#00BCD4"
+        android:text="Enter picture number:" />
+
+    <EditText
+        android:id="@+id/edit_text_picture_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/text_view_picture_number"
+        android:background="#FFEB3B"
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_request_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_picture_number"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="65dp"
+        android:text="Request Picture" />
+
+    <TextView
+        android:id="@+id/text_view_clip_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_request_picture"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="215dp"
+        android:background="#00BCD4"
+        android:text="Enter clip number:" />
+
+    <EditText
+        android:id="@+id/edit_text_clip_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_request_picture"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="212dp"
+        android:layout_toRightOf="@id/text_view_clip_number"
+        android:background="#FFEB3B"
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button_play_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_clip_number"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="27dp"
+        android:text="Play Clip" />
+
+    <Button
+        android:id="@+id/button_pause_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_play_clip"
+        android:layout_alignLeft="@id/button_play_clip"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="29dp"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/button_resume_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_pause_clip"
+        android:layout_alignLeft="@id/button_pause_clip"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:text="Resume" />
+
+    <Button
+        android:id="@+id/button_stop_clip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_resume_clip"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Stop" />
+
+
+</RelativeLayout>
+
+
